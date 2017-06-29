@@ -115,4 +115,3 @@ cd dbpedia_csv
 ./shuffle.sh train.csv dbpedia.train
 ./shuffle.sh test.csv dbpedia.test
 ```
-```
