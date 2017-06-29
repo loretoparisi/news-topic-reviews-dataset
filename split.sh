@@ -3,11 +3,12 @@
 # @author Loreto Parisi loretoparisi@gmail.com
 
 DS=$1
+RATIO=$2
 fname="${DS%%.*}"
 ext="${DS#*.}"
 
 echo Dataset:$DS
-split -l $[ $(wc -l $DS | awk '{print $1}') * 80 / 100] $DS
+split -l $[ $(wc -l $DS | awk '{print $1}') * $RATIO / 100] $DS
 
 DS_TRAIN="${fname}_train.$ext"
 DS_TEST="${fname}_test.$ext"
