@@ -107,3 +107,12 @@ cd dbpedia_csv
 ./normalize.sh train.csv dbpedia.train
 ./normalize.sh test.csv dbpedia.test
 ```
+
+To shuffle the dataset you can use the `shuffle.sh` script:
+
+```
+cd dbpedia_csv
+./shuffle.sh train.csv dbpedia.train
+./shuffle.sh test.csv dbpedia.test
+```
+```
