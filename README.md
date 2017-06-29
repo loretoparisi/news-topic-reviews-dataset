@@ -115,3 +115,12 @@ cd dbpedia_csv
 ./shuffle.sh train.csv dbpedia.train
 ./shuffle.sh test.csv dbpedia.test
 ```
+
+If you prefer to split the input dataset with a different ratio, you can use the `split.sh` script:
+
+```
+cd dbpedia_csv
+./split.sh train.csv 80
+```
+
+to have `80%` in the training set and `20%` in the test set.
