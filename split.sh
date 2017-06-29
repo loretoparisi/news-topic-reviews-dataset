@@ -1,6 +1,6 @@
 #!/bin/bash
 # Musixmatch Intelligence SDK for Docker
-# @author Loreto Parisi loreto@gmail.com
+# @author Loreto Parisi loretoparisi@gmail.com
 
 DS=$1
 fname="${DS%%.*}"
