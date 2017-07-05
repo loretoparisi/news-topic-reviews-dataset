@@ -77,27 +77,29 @@ Note that the separator is between double quotes like `"\t"` or like `","` so th
 
 ```
 ./count_classes.sh 1 dbpedia_csv/train.csv ","
-2,40000
-3,40000
-4,40000
-5,40000
-6,40000
-7,40000
-8,40000
-9,40000
-10,40000
-11,40000
-12,40000
-13,40000
-14,40000
-1,40000
+1 2,40000
+2 3,40000
+3 4,40000
+4 5,40000
+5 6,40000
+6 7,40000
+7 8,40000
+8 9,40000
+9 10,40000
+10 11,40000
+11 12,40000
+12 13,40000
+13 14,40000
+14 1,40000
 $ ./count_classes.sh 1 sogou_news_csv/train.csv ","
-"5",90000
-"2",90000
-"4",90000
-"1",90000
-"3",90000
+1 "5",90000
+2 "2",90000
+3 "4",90000
+4 "1",90000
+5 "3",90000
 ```
+
+where in the output the first column is the current column index, the second is the label, the third column is the number of occurences of that label, so like the label `"2"` has `90000` occurences, and the `sogou_news_csv/train.csv ` has `5` classes, while the `dbpedia_csv/train.csv` has `14` classes, etc.
 
 ## How to use the datasets for training and testing
 The train and test files must be normalized before used. Use the `normalize.sh` script to pre-process the files before training:
